@@ -1,0 +1,18 @@
+service: serverless-lambda-demo
+frameworkVersion: "3"
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: us-east-1
+  environment:
+    DEST_BUCKET: "ec2tos3bucket-thumbnail-lambda"
+
+functions:
+  resizeAndUploadImage:
+    handler: ./index.handler
+    timeout: 120
+    # events:
+    #   - s3:
+    #       zakarias-image-upload-bucket
+    #       event: s3:ObjectCreated:*

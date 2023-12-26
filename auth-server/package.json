@@ -1,0 +1,15 @@
+{
+  "name": "auth-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "package": "zip -r function.zip ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.433.0",
+    "jimp": "^0.22.10"
+  }
+}
